@@ -20,10 +20,12 @@ body {
     min-height: 300px;
     max-width: 1200px;
     background-color: rgb(59, 59, 59);
-    padding: 50px 50px;
+    padding: 50px 15px;
     position: relative;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
