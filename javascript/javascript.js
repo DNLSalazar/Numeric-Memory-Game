@@ -5,6 +5,9 @@ var tot = 0;
 var container = document.getElementById("container");
 var firstCard;
 var cards;
+
+
+
 window.addEventListener("load", function() {
     var n = parseInt(prompt("¿Cuántas parejas desea en el juego?"));
     cardsCreator(n*2);
@@ -15,6 +18,9 @@ window.addEventListener("load", function() {
         cards[i].addEventListener("click", evento);
     }
 });
+
+
+// The function that is called by every single card when is clicked
 
 var evento = function  () {
     this.firstElementChild.style.transform = "scale(0,0)";
@@ -28,6 +34,9 @@ var evento = function  () {
         }
     }
 }
+
+
+// The function that checks if the play is a good one or not
 
 function check (t1,t2) {
     if(t1 == t2) {
@@ -48,11 +57,11 @@ function check (t1,t2) {
         c1 = c2 = undefined;
     }
     container.lastElementChild.style.zIndex = "-1";
-    console.log(tot + " " + cards.length);
+    // console.log(tot + " " + cards.length);
     if(tot == cards.length)alert("You Won");
 }
 
-
+// Full the cards with the numbers
 
 function llenar (nCartas) {
     let contentItems = nCartas / 2;
@@ -77,6 +86,8 @@ function llenar (nCartas) {
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
 }
+
+// This function takes the introduced number and creates the cards for the game
 
 function cardsCreator (n) {
 
