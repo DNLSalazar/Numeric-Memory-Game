@@ -3,3 +3,4 @@
 A simple memory game based on numbers, be sure the entire project is
 in the same folder and run the index file in your browser
 (Chrome is highly recommended)
+Available [here](https://dnlsalazar.github.io/Numeric-Memory-Game/);
